@@ -4,11 +4,7 @@ import React, { Fragment } from 'react';
 class Tabs extends React.Component {
   constructor(props) {
     super(props)
-    // React.Children
-    // React.Children provides utilities for dealing with the this.props.children opaque /// data structure.
-    // React.Children.map
-    // React.Children.map(children, function[(thisArg)])
-    this.tabs = props.children;
+    this.tabs = props.children; 
     this.activeLink = React.createRef();
     this.state = { selected: this.tabs.find(tab => tab.props.selected) || this.tabs[0] }
   }
