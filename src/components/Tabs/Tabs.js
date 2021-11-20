@@ -8,9 +8,9 @@ class Tabs extends React.Component {
     // React.Children provides utilities for dealing with the this.props.children opaque /// data structure.
     // React.Children.map
     // React.Children.map(children, function[(thisArg)])
-    this.tabs = props.children
+    this.tabs = props.children;
+    this.activeLink = React.createRef();
     this.state = { selected: this.tabs.find(tab => tab.props.selected) || this.tabs[0] }
-
   }
   componentDidUpdate = () => {
     this.activeLink.focus()
@@ -51,6 +51,7 @@ class Tabs extends React.Component {
     else if (e.which === 35) this.lastTab(tab)
   }
   render() {
+    console.log("Tab", this.tabs);
     return (
       <div className="tabs">
         <div className="tab-list" role="tablist" aria-label={this.props.label}>
@@ -64,7 +65,9 @@ class Tabs extends React.Component {
               tabIndex={tab === this.state.selected ? 0 : -1}
               onClick={e => this.handleClick(e, tab)}
               onKeyUp={e => this.handleKeyup(e, tab)}
-              ref={link => { if (tab === this.state.selected) this.activeLink = link }}
+              ref={el => { if (tab === this.state.selected) this.activeLink = el }}
+              key={i}
+             
             >{tab.props.title}</button>
 
           ))}
@@ -73,7 +76,8 @@ class Tabs extends React.Component {
           {this.tabs.map((tab, i) => (
             React.cloneElement(tab, {
               index: i,
-              isSelected: () => tab === this.state.selected
+              isSelected: () => tab === this.state.selected,
+              key: i
             })
           ))}
         </Fragment>
