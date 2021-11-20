@@ -75,12 +75,12 @@ class Tabs extends React.Component {
         this.lastTab(tab)
         break;
       default:
-        
+
     }
  
   }
   render() {
-    console.log("Tab", this.tabs);
+    
     return (
       <div className="tabs">
         <div className="tab-list" role="tablist" aria-label={this.props.label}>
