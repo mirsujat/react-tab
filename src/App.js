@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
-import Tab from './components/Tabs/Tab/tab_component';
-import Tabs from './components/Tabs/tabs_component';
+import Tabs from './components/Tabs/Tabs';
+import Tab from './components/Tabs/Tab/Tab';
+
 
 
 
@@ -11,17 +12,17 @@ function App() {
       <header >
        Hello...From React App
       </header>
-      <Tabs>
-        <Tab title="tab one">
-          <h1>Panel One</h1>
-        </Tab>
-         <Tab title="tab two">
-          <h1>Panel Two</h1>
-        </Tab>
-         <Tab title="tab three">
-          <h1>Panel Three</h1>
-        </Tab>
-      </Tabs>
+     <Tabs>
+       <Tab title="Tab One">
+         <h1>Panel One</h1>
+       </Tab>
+       <Tab title="Tab Two">
+         <h1>Panel Two</h1>
+       </Tab>
+       <Tab title="Tab Three">
+         <h1>Panel Three</h1>
+       </Tab>
+     </Tabs>
     </div>
   );
 }
