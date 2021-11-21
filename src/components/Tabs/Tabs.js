@@ -25,9 +25,7 @@ class Tabs extends React.Component {
     this.activeLink.focus()
   }
 
-
-
-  selectTab = (tab) => {
+  selectTab = (tab) => { 
     this.setState({ selected: tab })
   }
   // PRESS Home Key on Key Board
