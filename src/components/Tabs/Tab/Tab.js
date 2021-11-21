@@ -1,14 +1,16 @@
 import React from 'react';
 
-//This is a  Tab Panel Container 
-const Tab = ({children, index, isSelected}) => (
-  <div id={`tabpanel_${index}`}
-       name={`tabpanel_${index}`}
-       role="tabpanel" 
-       aria-labelledby={`tab_${index}`}
-       aria-hidden={!isSelected()}
-       key={index}
-  >{children}</div>
-)
+const Tab = ({childred, index, isSelected}) => (
+  <div className="tab-panel"
+        id={`tabpanel_${index}`}
+        name={`tabpanel_${index}`}
+        role="tabpanel"
+        aria-labelledby={`tab_${index}`}
+        aria-hidden={!isSelected()}
+        key={index}
+  >
+    {childred}
+  </div>
+);
 
 export default Tab;
