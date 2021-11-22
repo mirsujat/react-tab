@@ -5,7 +5,12 @@ class Tabs extends Component {
   constructor(props) {
     super(props);
     this.tabs = props.children;
-    this.state = { selected: this.tabs.find(tab => tab.props.selected) || this.tabs[0]  };
+    this.state = { selected: false  };
+  }
+
+  componentDidMount = () => {
+    let selected = this.tabs.find(tab => tab.props.selected) || this.tabs[0];
+    this.setState({selected})
   }
 
   selectTab = (tab) =>{
@@ -29,6 +34,7 @@ class Tabs extends Component {
                 aria-controls = {`tab_${i}`}
                 aria-selected = {tab === this.state.selected}
                 onClick={e => this.handleClick(e, tab)}
+                key={`tab_${i}`}
                 >
                     {tab.props.title}
                 </button>
@@ -38,8 +44,8 @@ class Tabs extends Component {
               {this.tabs.map((tab, i) => (
                 React.cloneElement(tab, {
                   index: i,
-                  isSelected: () => tab === this.state.selected
-                  
+                  isSelected: () => tab === this.state.selected,
+                  key: i
                 })
               ))}
             </Fragment>

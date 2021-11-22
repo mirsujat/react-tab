@@ -7,7 +7,8 @@ const Tab = ({children, index, isSelected}) => (
     role="tabpanel"
     aria-labelledby={`tab_${index}`}
     aria-hidden={!isSelected()}
-    key={index}
+    key={`tabpanel_${index}`}
+
   >
     {children}
   </div>
