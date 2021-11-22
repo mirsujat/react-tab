@@ -91,7 +91,7 @@ class Tabs extends React.Component {
               onClick={e => this.handleClick(e, tab)}
               onKeyUp={e => this.handleKeyup(e, tab)}
               ref={el => { if (tab === this.state.selected) this.activeLink = el }}
-              key={i}
+              key={`tab_${i}`}
              
             >{tab.props.title}</button>
 

@@ -23,6 +23,7 @@ class Tabs extends Component {
   }
 
   render() {
+   
     return (
       <div className="tabs">
         <div className="tab-list" role="tablist">
