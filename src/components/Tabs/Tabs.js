@@ -6,6 +6,16 @@ class Tabs extends Component {
     this.tabs = props.children;
     this.activeLink = React.createRef();
     this.state = { selected: false };
+    this.NavigationKeys = {
+    tabKey: 13,
+    end: 35,
+    home: 36,
+    left: 37,
+    up: 38,
+    right: 39,
+    down: 40,
+    delete: 46
+  };
   }
 
   componentDidMount = () =>{
@@ -33,12 +43,38 @@ class Tabs extends Component {
     let index = this.tabs.indexOf(tab);
     if(index > 0) this.selectTab(this.tabs[index - 1])
   }
+  firstTab = (tab) =>{
+    let index = this.tabs.indexOf(tab);
+    if(index !== 0) this.selectTab(this.tabs[0])
+  }
+  lastTab = (tab) =>{
+    let index = this.tabs.tabIndex(tab);
+    if(index !== this.tabs.length) this.selectTab(this.tabs[this.tabs.length])
+  }
 
   handleKeyUp = (e, tab) =>{  
     e.preventDefault();
-   
-    if(e.keyCode === 39) this.nextTab(tab);
-    else if(e.keyCode === 37) this.previousTab(tab);
+    let key = e.keyCode;
+    switch(key){
+      case this.NavigationKeys.tabKey:
+        this.selectTab(tab)
+        break;
+      case this.NavigationKeys.right:
+        this.nextTab(tab)
+        break;
+      case this.NavigationKeys.left:
+        this.previousTab(tab)
+        break;
+      case this.NavigationKeys.home:
+        this.firstTab(tab)
+        break;
+      case this.NavigationKeys.end:
+        this.lastTab(tab)
+        break;
+      default:
+    }
+    // if(e.keyCode === 39) this.nextTab(tab);
+    // else if(e.keyCode === 37) this.previousTab(tab);
   }
 
 

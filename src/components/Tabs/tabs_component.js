@@ -52,12 +52,9 @@ class Tabs extends React.Component {
   }
 
   handleKeyup = (e, tab) => {
+    e.preventDefault();
      let key = e.keyCode;
-    e.preventDefault()
     switch(key){
-      case this.NavigationKeys.tabKey:
-        this.selectTab(tab)
-        break;
       case this.NavigationKeys.left:
         this.previousTab(tab)
         break;
@@ -71,7 +68,7 @@ class Tabs extends React.Component {
         this.lastTab(tab)
         break;
       default:
-
+        break
     }
  
   }

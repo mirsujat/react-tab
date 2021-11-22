@@ -73,7 +73,7 @@ h2 {
 
 [role="tab"]:hover::before,
 [role="tab"]:focus::before {
-  border-color: rgb(241 116 53);
+  border-color: rgb(68, 129, 235, 1);
 }
 
 [role="tabpanel"] {
