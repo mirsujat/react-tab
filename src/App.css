@@ -5,26 +5,28 @@ h2 {
   font-size: 1.1em;
 }
 .tabs {
+  display: block;
   width: 20em;
   font-family: "lucida grande", sans-serif;
 }
 
 [role="tablist"] {
+  display: flex;
+  width: 20em;
   margin: 0 0 -0.1em;
+  background-color: rgba(237, 239, 243, 1);
   overflow: visible;
 }
 
 [role="tab"] {
   position: relative;
   margin: 0;
-  padding: 0.3em 0.5em 0.4em;
-  border: 1px solid hsl(219, 1%, 72%);
-  border-radius: 0.2em 0.2em 0 0;
-  box-shadow: 0 0 0.2em hsl(219, 1%, 72%);
+  padding: 0.5em;
+  border: 1px solid rgba(183, 183, 184, 1);
   overflow: visible;
   font-family: inherit;
   font-size: inherit;
-  background: hsl(220, 20%, 94%);
+  background: rgba(237, 239, 243, 1);
 }
 
 [role="tab"]:hover::before,
@@ -35,18 +37,18 @@ h2 {
   right: -1px;
   left: -1px;
   border-radius: 0.2em 0.2em 0 0;
-  border-top: 3px solid hsl(20, 96%, 48%);
+  border-top: 3px solid rgb(170, 50, 220, 0.6);
   content: "";
 }
 
 [role="tab"][aria-selected="true"] {
   border-radius: 0;
-  background: hsl(220, 43%, 99%);
+  background: rgb(251, 252, 254, 1);
   outline: 0;
 }
 
 [role="tab"][aria-selected="true"]:not(:focus):not(:hover)::before {
-  border-top: 5px solid hsl(218, 96%, 48%);
+  border-top: 5px solid rgb(68, 129, 235, 1);
 }
 
 [role="tab"][aria-selected="true"]::after {
@@ -56,7 +58,7 @@ h2 {
   right: 0;
   left: 0;
   height: 0.3em;
-  background: hsl(220, 43%, 99%);
+  background: rgb(251, 252, 254, 1);
   box-shadow: none;
   content: "";
 }
@@ -71,22 +73,22 @@ h2 {
 
 [role="tab"]:hover::before,
 [role="tab"]:focus::before {
-  border-color: hsl(20, 96%, 48%);
+  border-color: rgb(241 116 53);
 }
 
 [role="tabpanel"] {
   position: relative;
   z-index: 2;
   padding: 0.5em 0.5em 0.7em;
-  border: 1px solid hsl(219, 1%, 72%);
+  border: 1px solid rgb(183 183 184);
   border-radius: 0 0.2em 0.2em 0.2em;
-  box-shadow: 0 0 0.2em hsl(219, 1%, 72%);
-  background: hsl(220, 43%, 99%);
+  box-shadow: 0 0 0.2em rgba(183, 183, 184, 1);
+  background: rgba(251, 252, 254, 1);
 }
 
 [role="tabpanel"]:focus {
-  border-color: hsl(20, 96%, 48%);
-  box-shadow: 0 0 0.2em hsl(20, 96%, 48%);
+  border-color: rgba(74, 73, 75, 0.6);
+  box-shadow: 0 0 0.2em rgba(205, 202, 206, 0.6);
   outline: 0;
 }
 
@@ -95,7 +97,7 @@ h2 {
   bottom: 0;
   right: -1px;
   left: -1px;
-  border-bottom: 3px solid hsl(20, 96%, 48%);
+  border-bottom: 3px solid rgb(241 116 53);
   border-radius: 0 0 0.2em 0.2em;
   content: "";
 }
