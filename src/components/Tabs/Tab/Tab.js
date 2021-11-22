@@ -1,17 +1,15 @@
 import React from 'react';
 
 const Tab = ({children, index, isSelected}) => (
-  <div
-    id={`tabpanel_${index}`}
-    name={`tabpanel_${index}`}
-    role="tabpanel"
-    aria-labelledby={`tab_${index}`}
-    aria-hidden={!isSelected()}
-    tabIndex="0"
-    key={`tabpanel_${index}`}
-
+  <div className="tabpanel" 
+  id={`tabpanel_${index}`} 
+  name={`tabpanel_{index}`} 
+  role="tabpanel" 
+  aria-labelledby={`tab_{index}`} 
+  aria-hidden={!isSelected()}
+  key={`tabpanel_${index}`}
   >
-    {children}
+      {children}
   </div>
 );
 
