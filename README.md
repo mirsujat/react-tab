@@ -1,8 +1,8 @@
 # `Tabs :`
-
 Tabs are a set of layered sections of content, known as tab panels, that display one panel of content at a time. Each tab panel has an associated tab element, that when activated, displays the panel. The list of tab elements is arranged along one edge of the currently displayed panel, most commonly the top edge.
 
 Terms used to describe this design pattern include:
+
 ## `Tabs or Tabbed Interface :`
 A set of tab elements and their associated tab panels.
 
