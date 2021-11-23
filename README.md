@@ -34,6 +34,22 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
       </p>
     </td>
     </tr>
+    <tr>
+    <td>Right Arrow</td>
+    <td>
+      <p> - Moves focus to the next tab.</p>
+      <p> - If focus is on the last tab, moves focus to the first tab.</p>
+      <p> - Activates the newly focused tab.</p>
+    </td>
+    </tr>
+    <tr>
+     <td>Left Arrow</td>
+     <td>
+     <p> -Moves focus to the previous tab.</p>
+     <p> -If focus is on the first tab, moves focus to the last tab.</p>
+     <p> -Activates the newly focused tab.</p>
+     </td>
+    </tr>
 </table>
 
 
