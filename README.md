@@ -22,11 +22,11 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
 |      ---               |         ---                                    |               
 | *tab*                  |  - When focus moves into the tab list, places  
                             focus on th active tab element .              
-                        - When the tab list contains the focus, moves   
+                          - When the tab list contains the focus, moves   
                            focus to the next element in the tab sequence,
                             which is the tabpanel element.           |                 
 
-|                         |                                                 |             
+            
 
 # `Keyboard Interaction `
 For the tab list:
