@@ -19,10 +19,13 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
 # `Accessibility Features`
 ### `Keyboard Support`
 <table>
-    <tr style="">
-        <td>key</td>
-        <td>function</td>
-    </tr>
+  <thead>
+  <tr>
+    <th>key</th>
+    <th>function</th>
+   </tr>
+  </thead>
+  </tbody>
     <tr>
     <td>tab</td>
     <td>
@@ -60,6 +63,7 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
     <td>End</td>
     <td>Moves focus to the last tab and activates it.</td>
     </tr>
+    </tbody>
 </table>
 
 ### `Role, Property, State, and Tabindex Attributes`
