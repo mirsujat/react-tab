@@ -43,12 +43,12 @@ Move focus to the previous focus element
 # `NOTE :`
 ##### `It is recommended that tabs activate automatically when they receive focus as long as their associated tab panels are displayed without noticeable latency. This typically requires tab panel content to be preloaded. Otherwise, automatic activation slows focus movement, which significantly hampers users' ability to navigate efficiently across the tab list. For additional guidance, see § 6.4 Deciding When to Make Selection Automatically Follow Focus.`
 
-## If the tabs in a tab list are arranged vertically :
+## `If the tabs in a tab list are arranged vertically :`
 Down Arrow performs as Right Arrow is described above.
 Up Arrow performs as Left Arrow is described above.
 If the tab list is horizontal, it does not listen for Down Arrow or Up Arrow so those keys can provide their normal browser scrolling functions even when focus is inside the tab list.
 
-# `WAI-ARIA Roles, States, and Properties`
+# `WAI-ARIA Roles, States, and Properties`       
 - The element that serves as the container for the set of tabs has role tablist.
   Each element that serves as a tab has role tab and is contained within the element with role tablist.
 - Each element that contains the content panel for a tab has role tabpanel.
