@@ -61,6 +61,7 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
     <td>Moves focus to the last tab and activates it.</td>
     </tr>
 </table>
+### Role, Property, State, and Tabindex Attributes
 
 
 # `Keyboard Interaction `
