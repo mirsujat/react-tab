@@ -18,14 +18,14 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
 
 # Accessibility Features
 ### Keyboard Support
-| *key*                  |    *function*                                  |
+| *key*                  |    *function*                                      |
 |      ---               |         ---                                    |               
-                             - When focus moves into the tab list, places  
-                               focus on th active tab element . 
+|  *tab*                 |   - When focus moves into the tab list, places     |
+|                        |       focus on th active tab element .             |
 
-     *tab*                    - When the tab list contains the focus, moves   
-                                focus to the next element in the tab sequence,
-|                        |    which is the tabpanel  element. |                       
+|                        |  - When the tab list contains the focus, moves     |   
+|                               focus to the next element in the tab sequence,|
+|                        |      which is the tabpanel  element.               |        
 
             
 
