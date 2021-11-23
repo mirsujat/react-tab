@@ -20,13 +20,14 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
 ### Keyboard Support
 <table>
     <tr>
-        <td>*key* </td>
-        <td>*function* </td>
+        <td>key</td>
+        <td>function</td>
     </tr>
     <tr>
-    <td>*tab*</td>
+    <td>tab</td>
     <td>
-      - When focus moves into the tab list, places focus on the active *tab* element .
+      - When focus moves into the tab list, places focus on the active tab element .
+      - 
       - When the tab list contains the focus, moves focus to the next element in the tab sequence, which is the tabpanel element.
     </td>
     </tr>
