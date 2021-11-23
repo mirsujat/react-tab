@@ -19,7 +19,7 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
 # Accessibility Features
 ### Keyboard Support
 | *key*                  |    *function*                                  |
------------------------------------------------------------------------------
+---                         ___
 | *tab*                   |  - When focus moves into the tab list, places   
                               focus on th active tab element .              
                             - When the tab list contains the focus, moves   
