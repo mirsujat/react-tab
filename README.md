@@ -50,7 +50,7 @@ If the tab list is horizontal, it does not listen for Down Arrow or Up Arrow so 
 
 # `WAI-ARIA Roles, States, and Properties`     
 - The element that serves as the container for the set of tabs has role tablist.
-  Each element that serves as a tab has role tab and is contained within the element with role tablist.
+  Each element that serves as a tab has role tab and is contained within the element with *role tablist*.
 - Each element that contains the content panel for a tab has role tabpanel.
   If the tab list has a visible label, the element with role tablist has aria-labelledby set to a value that refers to the labelling element. Otherwise, the tablist element has a label provided by aria-label.
 - Each element with role tab has the property aria-controls referring to its associated tabpanel element.
