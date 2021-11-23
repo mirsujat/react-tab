@@ -16,8 +16,8 @@ An element in the tab list that serves as a label for one of the tab panels and 
 The element that contains the content associated with a tab.
 When a tabbed interface is initialized, one tab panel is displayed and its associated tab is styled to indicate that it is active. When the user activates one of the other tab elements, the previously displayed tab panel is hidden, the tab panel associated with the activated tab becomes visible, and the tab is considered "active".
 
-# Accessibility Features
-### Keyboard Support
+# `Accessibility Features`
+### `Keyboard Support`
 <table>
     <tr style="">
         <td>key</td>
@@ -61,8 +61,23 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
     <td>Moves focus to the last tab and activates it.</td>
     </tr>
 </table>
-### Role, Property, State, and Tabindex Attributes
+### `Role, Property, State, and Tabindex Attributes`
 
+<table>
+  <thead>
+    <tr>
+      <th>Role</th>
+      <th>Attribute</th>
+      <th>Element</th>
+      <th>Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>tablist</td>
+  </tr>
+  </tbody>
+</table>
 
 # `Keyboard Interaction `
 For the tab list:
