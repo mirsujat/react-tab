@@ -1,51 +1,51 @@
-# Tabs
+# Tabs :
 
 Tabs are a set of layered sections of content, known as tab panels, that display one panel of content at a time. Each tab panel has an associated tab element, that when activated, displays the panel. The list of tab elements is arranged along one edge of the currently displayed panel, most commonly the top edge.
 
 Terms used to describe this design pattern include:
 
-## Tabs or Tabbed Interface
+## Tabs or Tabbed Interface :
 
 A set of tab elements and their associated tab panels.
 
-## Tab List
+## Tab List :
 
 A set of tab elements contained in a tablist element.
 
-## tab
+## tab :
 
 An element in the tab list that serves as a label for one of the tab panels and can be activated to display that panel.
 
-## tabpanel
+## tabpanel :
 
 The element that contains the content associated with a tab.
 When a tabbed interface is initialized, one tab panel is displayed and its associated tab is styled to indicate that it is active. When the user activates one of the other tab elements, the previously displayed tab panel is hidden, the tab panel associated with the activated tab becomes visible, and the tab is considered "active".
 
-# Keyboard Interaction
+# Keyboard Interaction :
 
 For the tab list:
 
-### Tab:
+### Tab :
 
 When focus moves into the tab list, places focus on the active tab element. When the tab list contains the focus, moves focus to the next element in the page tab sequence outside the tablist, which is typically either the first focusable element inside the tab panel or the tab panel itself.
 
-### When focus is on a tab element in a horizontal tab list:
+### When focus is on a tab element in a horizontal tab list :
 
-#### Left Arrow:
+#### Left Arrow :
 
 moves focus to the previous tab. If focus is on the first tab, moves focus to the last tab. Optionally, activates the newly focused tab (See note below).
 
-#### Right Arrow:
+#### Right Arrow :
 
 Moves focus to the next tab. If focus is on the last tab element, moves focus to the first tab. Optionally, activates the newly focused tab (See note below).
 
 ### When focus is on a tab in a tablist with either horizontal or vertical orientation:
 
-#### Space or Enter:
+#### Space or Enter :
 
 Activates the tab if it was not activated automatically on focus.
 
-## Home (Optional):
+## Home (Optional) :
 
 Moves focus to the first tab. Optionally, activates the newly focused
 
@@ -55,21 +55,21 @@ Moves focus to the first tab. Optionally, activates the newly focused
 
 Moves focus to the last tab
 
-### Shift + tab:
+### Shift + tab :
 
 Move focus to the previous focus element
 
-# NOTE
+# NOTE :
 
 ##### `It is recommended that tabs activate automatically when they receive focus as long as their associated tab panels are displayed without noticeable latency. This typically requires tab panel content to be preloaded. Otherwise, automatic activation slows focus movement, which significantly hampers users' ability to navigate efficiently across the tab list. For additional guidance, see § 6.4 Deciding When to Make Selection Automatically Follow Focus.`
 
-## If the tabs in a tab list are arranged vertically:
+## If the tabs in a tab list are arranged vertically :
 
 Down Arrow performs as Right Arrow is described above.
 Up Arrow performs as Left Arrow is described above.
 If the tab list is horizontal, it does not listen for Down Arrow or Up Arrow so those keys can provide their normal browser scrolling functions even when focus is inside the tab list.
 
-# WAI-ARIA Roles, States, and Properties
+# `WAI-ARIA Roles, States, and Properties`
 
 - The element that serves as the container for the set of tabs has role tablist.
   Each element that serves as a tab has role tab and is contained within the element with role tablist.
