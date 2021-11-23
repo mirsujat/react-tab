@@ -31,19 +31,19 @@ Moves focus to the next tab. If focus is on the last tab element, moves focus to
 #### `Space or Enter `
 Activates the tab if it was not activated automatically on focus.
 
-## `Home (Optional) `
+#### `Home (Optional) `
 Moves focus to the first tab. Optionally, activates the newly focused.
 
-### `tab (See note below)`.
-### `End `
+#### `tab (See note below)`.
+#### `End `
 Moves focus to the last tab
-### `Shift + tab `
+#### `Shift + tab `
 Move focus to the previous focus element
 
 # `NOTE `
 ##### `It is recommended that tabs activate automatically when they receive focus as long as their associated tab panels are displayed without noticeable latency. This typically requires tab panel content to be preloaded. Otherwise, automatic activation slows focus movement, which significantly hampers users' ability to navigate efficiently across the tab list. For additional guidance, see § 6.4 Deciding When to Make Selection Automatically Follow Focus.`
 
-## `If the tabs in a tab list are arranged vertically `
+### `If the tabs in a tab list are arranged vertically `
 Down Arrow performs as Right Arrow is described above.
 Up Arrow performs as Left Arrow is described above.
 If the tab list is horizontal, it does not listen for Down Arrow or Up Arrow so those keys can provide their normal browser scrolling functions even when focus is inside the tab list.
