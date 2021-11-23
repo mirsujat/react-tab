@@ -61,6 +61,7 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
     <td>Moves focus to the last tab and activates it.</td>
     </tr>
 </table>
+
 ### `Role, Property, State, and Tabindex Attributes`
 
 <table>
@@ -75,6 +76,9 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
   <tbody>
   <tr>
     <td>tablist</td>
+    <td></td>
+    <td>div</td>
+    <td>Indicates that the element serves as a container for a set of tabs.</td>
   </tr>
   </tbody>
 </table>
