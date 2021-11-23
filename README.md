@@ -1,3 +1,6 @@
+### Accessible React Tabs Component
+
+#### Basic Concept
 # `Tabs ` #
 Tabs are a set of layered sections of content, known as tab panels, that display one panel of content at a time. Each tab panel has an associated tab element, that when activated, displays the panel. The list of tab elements is arranged along one edge of the currently displayed panel, most commonly the top edge.
 
@@ -227,3 +230,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `Thanks`
+<p>Mir Sujat</p>
