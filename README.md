@@ -19,21 +19,25 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
 # Accessibility Features
 ### Keyboard Support
 <table>
+<th>
     <tr>
         <td>key</td>
         <td>function</td>
     </tr>
+  </th>
+  <tbody>
     <tr>
     <td>tab</td>
     <td>
-      <p> - When focus moves into the tab list, places focus on the active tab element . 
+      <p> 
+      - When focus moves into the tab list, places focus on the active tab element . 
       </p>
       <p>
       - When the tab list contains the focus, moves focus to the next element in the tab sequence, which is the tabpanel element.
       </p>
     </td>
     </tr>
-
+  </tbody>
 </table>
 
 
