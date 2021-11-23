@@ -16,6 +16,16 @@ An element in the tab list that serves as a label for one of the tab panels and 
 The element that contains the content associated with a tab.
 When a tabbed interface is initialized, one tab panel is displayed and its associated tab is styled to indicate that it is active. When the user activates one of the other tab elements, the previously displayed tab panel is hidden, the tab panel associated with the activated tab becomes visible, and the tab is considered "active".
 
+# Accessibility Features
+### Keyboard Support
+| *key*                  |    *function*                                  |
+-----------------------------------------------------------------------------
+| *tab*                   |  - When focus moves into the tab list, places    |
+                          |    focus on th active tab element .              |
+                          |  - When the tab list contains the focus, moves   |
+                          |    focus to the next element in the tab sequence,
+                          |    which is the tabpanel element.                             
+
 # `Keyboard Interaction `
 For the tab list:
 
