@@ -18,7 +18,7 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
 
 # Accessibility Features
 ### Keyboard Support
-> <table>
+<table>
     <tr style="">
         <td>key</td>
         <td>function</td>
