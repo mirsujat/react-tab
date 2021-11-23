@@ -50,6 +50,16 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
      <p> -Activates the newly focused tab.</p>
      </td>
     </tr>
+    <tr>
+      <td>Home</td>
+      <td>
+      <p>Moves focus to the first tab and activates it.</p>
+      </td>
+    </tr>
+    <tr>
+    <td>End</td>
+    <td>Moves focus to the last tab and activates it.</td>
+    </tr>
 </table>
 
 
