@@ -156,6 +156,7 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
 </table>
 
 ### CSS
+> 
 > .tabs {
   display: block;
   width: 20em;
@@ -264,6 +265,7 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
 [role="tabpanel"][aria-hidden="true"] {
   display: none;
 }
+>
 
 # `Keyboard Interaction `
 For the tab list:
