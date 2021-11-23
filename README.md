@@ -80,6 +80,78 @@ When a tabbed interface is initialized, one tab panel is displayed and its assoc
     <td>div</td>
     <td>Indicates that the element serves as a container for a set of tabs.</td>
   </tr>
+   <tr>
+    <td></td>
+    <td>aria-label=""</td>
+    <td>div</td>
+    <td>Provides a label that describes the purpose of the set of tabs.</td>
+  </tr>
+    <tr>
+    <td>tab</td>
+    <td></td>
+    <td>button</td>
+    <td>
+    <p> - Indicates the element serves as a tab control.<p>
+    <p> - When focused, is automatically activated, causing its associated tabpanel to be displayed.<p>
+    <p> - Provides a title for its associated tabpanel.<p>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>aria-selected="true"</td>
+    <td>button</td>
+    <td>
+    <p> - Indicates the tab control is activated and its associated panel is displayed.<p>
+    <p> - Set when a tab receives focus.<p>
+    </td>
+  </tr>
+   <tr>
+    <td></td>
+    <td>tabindex="-1"</td>
+    <td>button</td>
+    <td>
+    <p> - Removes the element from the page Tab sequence.<p>
+    <p> - Set when a tab is not selected so that only the selected tab is in the page Tab sequence.<p>
+    <p> - Since an HTML button element is used for the tab, it is not necessary to set tabindex=0 on the selected (active) tab element.<p>
+    </td>
+  </tr>
+   <tr>
+    <td></td>
+    <td>aria-controls="IDREF"</td>
+    <td>button</td>
+    <td>
+    <p> - Refers to the tabpanel element associated with the tab.<p>
+    </td>
+  </tr>
+  <tr>
+    <td>tabpanel</td>
+    <td></td>
+    <td>div</td>
+    <td>
+    <p> - Indicates the element serves as a container for tab panel content.<p>
+    <p> - Is hidden unless its associated tab control is activated.<p>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>aria-labelledby="IDREF" </td>
+    <td>div</td>
+    <td>
+    <p> - Refers to the tab element that controls the panel.<p>
+    <p> - Provides an accessible name for the tab panel.<p>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>tabindex="0" </td>
+    <td>div</td>
+    <td>
+    <p> - Puts the tabpanel in the page Tab sequence.<p>
+    <p> - Facilitates movement to panel content for assistive technology users.<p>
+    <p> - Especially helpful if there are panels that do not contain a focusable element.<p>
+    </td>
+  </tr>
+
   </tbody>
 </table>
 
