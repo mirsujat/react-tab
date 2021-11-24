@@ -13,6 +13,14 @@ header{
 section{
   padding: 1.5em;
 }
+footer{
+  font-family: 'Lucida Sans',  sans-serif;
+  font-size: smaller;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 .app{
   display: flex;
   flex-direction: column;

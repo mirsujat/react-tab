@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import Footer from './components/Footer/Footer';
 import Tab from './components/Tabs/Tab/Tab';
 import Tabs from './components/Tabs/Tabs';
 
@@ -64,6 +65,7 @@ function App() {
            </section>
         </Tab>
       </Tabs>
+      <Footer></Footer>
     </div>
   );
 }
