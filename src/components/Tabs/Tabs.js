@@ -48,8 +48,8 @@ class Tabs extends Component {
     if(index !== 0) this.selectTab(this.tabs[0])
   }
   lastTab = (tab) =>{
-    let index = this.tabs.tabIndex(tab);
-    if(index !== this.tabs.length) this.selectTab(this.tabs[this.tabs.length])
+    let index = this.tabs.indexOf(tab);
+    if(index !== this.tabs.length) this.selectTab(this.tabs[this.tabs.length -1])
   }
 
   handleKeyUp = (e, tab) =>{  
