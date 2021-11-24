@@ -9,7 +9,7 @@ const Tab = ({children, index, isSelected}) => (
   aria-hidden={!isSelected()}
   key={`tabpanel_${index}`}
   tabIndex="0"
-  data-test-id="tabpanel"
+  data-testid="tabpanel"
   >
       {children}
   </div>

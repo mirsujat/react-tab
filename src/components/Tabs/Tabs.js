@@ -80,8 +80,8 @@ class Tabs extends Component {
 
   render() {
     return (
-      <div className="tabs">
-        <div className="tab-list" role="tablist">
+      <div className="tabs" data-testid="tabs">
+        <div className="tab-list" role="tablist" data-testid="tablist">
             {this.tabs.map((tab, i) =>(
               <button className="tab" 
               id={`tab_${i}`} 
@@ -92,7 +92,9 @@ class Tabs extends Component {
               onClick={e => this.handleClick(e, tab)}
               onKeyUp={e => this.handleKeyUp(e, tab)}
               ref={el => {if(tab === this.state.selected) this.activeLink = el}}
-              key={`tab_${i}`} >
+              key={`tab_${i}`} 
+              data-testid="tab"
+              >
                 {tab.props.title}
                 </button>
             ))}
