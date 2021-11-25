@@ -80,7 +80,7 @@ class Tabs extends Component {
 
   render() {
     return (
-      <div className="tabs" data-testid="tabs">
+      <div className="tabs" data-testid="tabs" role="tabs">
         <div className="tab-list" role="tablist" data-testid="tablist">
             {this.tabs.map((tab, i) =>(
               <button className="tab" 
