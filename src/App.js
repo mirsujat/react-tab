@@ -12,8 +12,9 @@ function App() {
   return (
     <div className="app">
       <header>
-       Accessibile React Tabs Component
+        <h1>Accessibile React Tabs Component</h1>
       </header>
+      <main>
       <Tabs>
         <Tab title="Tabs">
           <section>
@@ -65,6 +66,7 @@ function App() {
            </section>
         </Tab>
       </Tabs>
+      </main>
       <Footer></Footer>
     </div>
   );
