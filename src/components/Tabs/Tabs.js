@@ -73,14 +73,12 @@ class Tabs extends Component {
         break;
       default:
     }
-    // if(e.keyCode === 39) this.nextTab(tab);
-    // else if(e.keyCode === 37) this.previousTab(tab);
   }
 
 
   render() {
     return (
-      <div className="tabs" data-testid="tabs" role="tabs">
+      <div className="tabs" data-testid="tabs">
         <div className="tab-list" role="tablist" data-testid="tablist">
             {this.tabs.map((tab, i) =>(
               <button className="tab" 

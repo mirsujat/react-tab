@@ -18,7 +18,7 @@ function App() {
       <Tabs>
         <Tab title="Tabs">
           <section>
-            <h4>Tabs</h4>
+            <h2>Tabs</h2>
             <p> Tabs are a set of layered sections of content, known as tab panels, that display one panel of content at a time. Each tab panel has an associated tab element, that when activated, displays the panel. The list of tab elements is arranged along one edge of the currently displayed panel, most commonly the top edge.
             </p>
             <p>Terms used to describe this design pattern include:</p>
@@ -36,7 +36,7 @@ function App() {
     </Tab>
     <Tab title="Keyboard Interaction">
       <section>
-        <h4>Keyboard Interaction</h4>
+        <h2>Keyboard Interaction</h2>
         <p>For the tab list:</p>
         <p>Tab: When focus moves into the tab list, places focus on the active tab element. When the tab list contains the focus, moves focus to the next element in the page tab sequence outside the tablist, which is typically either the first focusable element inside the tab panel or the tab panel itself. When focus is on a tab element in a horizontal tab list:</p>
         <p>Left Arrow: moves focus to the previous tab. If focus is on the first tab, moves focus to the last tab. Optionally, activates the newly focused tab (See note below).</p>
@@ -51,7 +51,7 @@ function App() {
     </Tab>
          <Tab title="WAI-ARIA Roles">
            <section>
-             <h4>WAI-ARIA Roles, States, and Properties</h4>
+             <h2>WAI-ARIA Roles, States, and Properties</h2>
              <ul>
                <li>The element that serves as the container for the set of tabs has role tablist.</li>
                <li>Each element that serves as a tab has role tab and is contained within the element with role tablist.</li>
