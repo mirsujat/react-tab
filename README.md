@@ -1,6 +1,6 @@
 ### Accessible React Tabs Component 
 
-### [Demo](https://a11rtc.netlify.app/)
+### [See Demo](https://a11rtc.netlify.app/)
 
 ### Accessibility Audit
 #### Google Lighthouse
