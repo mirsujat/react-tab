@@ -1,7 +1,11 @@
 ### Accessible React Tabs Component 
 
 ### Accessibility Audit
+#### Google Lighthouse
 [![Google Lighthouse](https://github.com/mirsujat/react-tab/blob/master/Lighthouse-Report.png)]
+
+#### NVDA 100%
+
 
 #### Basic Concept
 # `Tabs ` #
