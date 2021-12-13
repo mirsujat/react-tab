@@ -4,24 +4,24 @@ h1 {
 h2 {
   font-size: 1.1em;
 }
-header{
+header {
   font-size: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   font-weight: bold;
 }
-section{
+section {
   padding: 1.5em;
 }
-footer{
-  font-family: 'Lucida Sans',  sans-serif;
+footer {
+  font-family: "Lucida Sans", sans-serif;
   font-size: smaller;
   font-weight: normal;
   letter-spacing: 0.1em;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.app{
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,4 +133,8 @@ footer{
 }
 [role="tabpanel"][aria-hidden="true"] {
   display: none;
+}
+.download_link {
+  margin-bottom: 25px;
+  font-weight: bold;
 }
