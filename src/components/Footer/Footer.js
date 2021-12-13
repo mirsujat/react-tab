@@ -4,7 +4,7 @@ const Footer = () => {
     return(
         <footer>
         <p>Design and Develop by Mir Sujat, &copy; {date.getFullYear()}, E-mail: mir.sujat@gmail.com,  
-        <a className="download_link" href="https://github.com/mirsujat/react-tab" target="_blank" >
+        <a className="download_link" href="https://github.com/mirsujat/react-tab" target="_blank" rel="noreferrer">
           Download Source Code 
       </a> </p>
     </footer>

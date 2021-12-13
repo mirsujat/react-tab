@@ -16,7 +16,7 @@ function App() {
       </header>
       <main>
       <p className="download_link">
-      <a href="https://github.com/mirsujat/react-tab" target="_blank" >
+      <a href="https://github.com/mirsujat/react-tab" target="_blank" rel="noreferrer" >
           Download Source Code 
       </a>
      </p>
